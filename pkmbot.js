@@ -15,9 +15,9 @@ discord.on('message', message => {
         var prefix_alt = '<@!';
         var suffix = '>';
         var search_string = prefix.concat(config.discord_userid, suffix);
-        var msg = discord_message.replace(search_string, discord.users.get(config.discord_userid).username);
+        var msg_filtered = discord_message.replace(search_string, discord.users.get(config.discord_userid).username);
         search_string = prefix_alt.concat(config.discord_userid, suffix);
-        msg = discord_message.replace(search_string, discord.users.get(config.discord_userid).username);
+        var msg = msg_filtered.replace(search_string, discord.users.get(config.discord_userid).username);
         console.log('[PKMBOT] ' + msg);
         telegram.sendMessage(config.telegram_chatid, msg);   
     }
