@@ -1,0 +1,8 @@
+{
+    "discord_token": "YOUR_DISCORD_TOKEN",
+    "discord_guildid": "YOUR_DISCORD_GUILD_ID",
+    "discord_channelid" : "YOUR_CHANNEL_ID",
+    "discord_userid": "YOUR_DISCORD_USER_ID",
+    "telegram_chatid" : "YOUR_TELEGRAM_CHAT_ID",
+    "telegram_token": "YOUR_TELEGRAM_BOT_TOKEN"
+}
